@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*scroll bar */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: black;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(132, 132, 255);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://media.gq.com.mx/photos/651c763313b1aee6efd6b8bf/16:9/w_2560%2Cc_limit/Netflix_1246478875.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 5%;
+    margin-top: 45%;
+}
+
+#container img {
+    max-width: 100%;
+    height: auto;
+    background-color: rebeccapurple;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.imageScelta {
+    max-width: 100%;
+    height: auto;
+    padding: 1%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 43%;
+    border-radius: 10px;
+    border: 2px solid navy;
+}
+
+.nome-serie {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.geenre-series {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.valutazione {
+    color: white;
+    background-color: blue;
+    padding: 2%;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-right: 85%;
+}
+
+.modal {
+    z-index: 1;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.input-btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+}
+
+button {
+    padding: 1%;
+    background-color: navy;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid navy;
+    margin-right: 10px;
+}
+
+input {
+    padding: 1%;
+    border: 1px solid navy;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+#error {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+.mostraError {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+#modal {
+    background-color: rgb(37, 35, 35);
+    padding: 1%;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 43%;
+    position: fixed;
+    display: none;
+    border-radius: 20px;
+}
+
+.summary {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
